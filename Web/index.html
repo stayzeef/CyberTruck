@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css">
+<script src="https://kit.fontawesome.com/fef9c30a7a.js" crossorigin="anonymous"></script>
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<head>
+	<link rel="manifest" href="/manifest.json">
+	<link rel="stylesheet" href="styles.css" type="text.css">
+	<meta name="theme-color" content="#4285f4" />
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+	<title>Tesla Truck Control</title>
+</head>
+	<body>
+		<form method="get">
+			<div class="grid-container">
+				<div class="Left-Indicator">
+					<button type="button" class="button" id="left-indicator-button" onclick= window.location.href='/leftindicator'>
+							<i class="far fa-caret-square-left" id="left-indicator-icon"></i>
+					</button>
+				</div>
+
+				<div class="Lights">
+					<button type="button" class="button" id="lights-button" onclick= window.location.href='/lights'>
+						<i class="fas fa-lightbulb" id="lights-icon"></i>
+					</button>
+				</div>
+
+				<div class="Emergency">
+					<button type="button" class="button" id="emergency-buttom" onclick= window.location.href='/emergency'>
+						<i class="mdi mdi-triangle-outline" id="emergency-icon"></i>
+					</button>
+				</div>
+
+				<div class="Right-Indicator">
+					<button type="button" class="button" id="right-indicator-button" onclick= window.location.href='/rightindicator'>
+						<i class="far fa-caret-square-right" id="right-indicator-icon"></i>
+					</button>
+				</div>
+
+				<div class="Go">
+					<button type="button" class="button" id="go-button"onclick= window.location.href='/go'>
+						<i class="fas fa-arrow-alt-circle-up" id="go-icon"></i>
+					</button>
+				</div>
+
+				<div class="Horn">
+					<button type="button" class="button" id="horn-button" onclick= window.location.href='/horn'>
+						<i class="fas fa-bullhorn" id="horn-icon"></i>
+					</button>
+				</div>
+
+				<div class="Left">
+					<button type="button" class="button" id="left-button" onclick= window.location.href='/left'> 
+						<i class="fas fa-long-arrow-alt-left" id="left-icon"></i>
+					</button>
+				</div>
+
+				<div class="Right">
+					<button type="button" class="button" id="right-button" onclick= window.location.href='/right'>
+						<i class="fas fa-long-arrow-alt-right" id="right-icon"></i>
+					</button>
+				</div>
+
+				<div class="Stop">
+					<button type="button" class="button" id="stop-button" onclick= window.location.href='/stop'>
+						<i class="fas fa-minus-circle" id="stop-icon"></i>
+					</button>
+				</div>
+			</div>
+		</form>
+		<script>
+		if ('serviceWorker' in navigator) {
+		  window.addEventListener('load', function() {
+		    navigator.serviceWorker.register('service-worker.js')
+		      .then(reg => {
+		        console.log('Service worker registered!', reg);
+		      })
+		      .catch(err => {
+		        console.log('Service worker registration failed: BULLSHIT', err);
+		      });
+		  });
+		}
+		</script>
+	</body>
+</html>

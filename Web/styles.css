@@ -1,0 +1,270 @@
+html, body 
+{
+	margin:0%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #000000;
+}
+
+.grid-container
+{
+	background-color: #000000;
+}
+
+.button:active
+{
+	background-color: #241e1e;
+}
+
+.button
+{
+	background-color: #3e3636;
+	border-color: #000000;
+	outline: 0;
+}
+
+#emergency-icon
+{
+	font-weight: bold;
+	color: #b3000c;
+}
+
+#lights-icon
+{
+	color: #aeb025;
+}
+
+#left-indicator-icon,#right-indicator-icon
+{
+	color: #b07425;
+}
+
+#go-icon
+{
+	color: #00b32c;
+}
+
+#horn-icon
+{
+	color: #d8d8d8;
+}
+
+#stop-icon
+{
+	color: #b3000c;
+}
+
+#left-icon,#right-icon
+{
+	color: #d8d8d8;
+}
+
+@media only screen and (max-width: 361px)
+{
+	body
+	{
+		padding-top: 5rem;
+	}
+	.grid-container 
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-column-gap: 1%;
+		grid-row-gap: 1%;
+		height: 100%;
+		padding: 0;
+		margin-bottom: 1%;
+	}
+
+	.button 
+	{
+	width: 100%;
+	height: 100%;
+	border-radius: 4rem;
+	}
+
+	.Left-Indicator 
+	{
+		grid-column: 1/3;
+		grid-row: 1/3;
+	}
+
+	.Lights 
+	{
+		grid-column: 3/5;
+		grid-row: 1;
+	}
+
+	.Emergency 
+	{
+		grid-column: 3/5;
+		grid-row: 2;
+	}
+
+	.Right-Indicator 
+	{
+		grid-column: 5/7;
+		grid-row: 1/3;
+	}
+
+	.Go 
+	{
+		grid-column: 4/7;
+		grid-row: 7/10;
+	}
+
+	.Horn
+	{
+		grid-column:1/7;
+		grid-row: 3;
+	}
+
+	.Left 
+	{
+		grid-column: 1/4;
+		grid-row: 4/7;
+	}
+
+	.Right 
+	{
+		grid-column: 4/7;
+		grid-row: 4/7;
+	}
+
+	.Stop 
+	{
+		grid-column: 1/4;
+		grid-row: 7/10;
+	}
+
+	#emergency-icon
+	{
+		font-size: 2rem;				
+	}
+
+	#lights-icon
+	{
+		font-size: 2rem;
+	}
+
+	#left-indicator-icon,#right-indicator-icon{
+		font-size: 4rem;
+	}
+
+	#go-icon{
+		font-size: 8rem;
+	}
+
+	#horn-icon{
+		font-size: 2rem;
+	}
+
+	#stop-icon{
+		font-size: 8rem;				
+	}
+
+	#left-icon,#right-icon{
+		font-size: 8rem;				
+	}
+}
+
+@media only screen and (min-width: 362px)
+{
+	body
+	{
+		padding-top: 1rem;
+	}
+	.grid-container 
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-column-gap: 1%;
+		grid-row-gap: 1%;
+		height: 100%;
+		padding: 0;
+		margin-bottom: 1%;
+		background-color: #000000;
+	}
+	.Left-Indicator {
+		grid-column: 1/3;
+		grid-row: 1/3;
+	}
+
+	.Lights {
+		grid-column: 3/5;
+		grid-row: 1;
+	}
+
+	.Emergency {
+		grid-column: 3/5;
+		grid-row: 2;
+	}
+
+	.Right-Indicator {
+		grid-column: 5/7;
+		grid-row: 1/3;
+	}
+
+	.Go {
+		grid-column: 7/10;
+		grid-row: 1/4;
+	}
+
+	.Horn{
+		grid-column:1/7;
+		grid-row: 3;
+	}
+
+	.Left {
+		grid-column: 1/4;
+		grid-row: 4/7;
+	}
+
+	.Right {
+		grid-column: 4/7;
+		grid-row: 4/7;
+	}
+
+	.Stop {
+		grid-column: 7/10;
+		grid-row: 4/7;
+	}
+
+	#emergency-icon{
+		font-size: 1rem;
+	}
+
+	#lights-icon{
+		font-size: rem;
+	}
+
+	#left-indicator-icon,#right-indicator-icon{
+		font-size: 4rem;
+	}
+
+	#go-icon{
+		font-size: 9rem;
+	}
+
+	#horn-icon{
+		font-size: 1rem;
+	}
+
+	#stop-icon{
+		font-size: 9rem;
+	}
+
+	#left-icon,#right-icon{
+		font-size: 9rem;
+	}
+
+	.button 
+	{
+	width: 100%;
+	height: 100%;
+	border-radius: 5rem;
+	}
+
+}
